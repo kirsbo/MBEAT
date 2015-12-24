@@ -1,0 +1,67 @@
+1) Install VAC
+	-Set up a command with the "Extended action" set to "Tab"
+	-Set up a command with the "Extended action" set to "Escape"
+
+2) Install Autohotkey (www.autohotkey.org) and download the MBEAT.ahk file.
+
+3) Start Fallout, select options and check Windowed mode. Uncheck Borderless if it's checked. Click OK. Close Fallout.
+
+4) Go to the following path: c:\users\[username]\documents\my games\fallout4
+where [username] is the name of your Windows user account.
+
+5) Right-click Fallout4.ini and select edit
+
+6) Under the line that says "[General]", write the following on a separate line:
+
+bAlwaysActive=1
+
+Save the file and close it.
+
+This will keep Fallout running, even when using the OSK. Without the above line, the game will pause. This setting should work for other BethEngine games as well. But the ini files to edit, will of course be named something different. Probably Skyrim.ini and Fallout3.ini etc.
+
+7) Right-click Fallout4Prefs.ini and select edit
+
+Under the line that says "[Display]", will be a lot of different settings. Two of these are named
+
+iSize W=x
+iSize H=y
+
+x and y will be numbers.
+
+I believe the two lines are there by default, but if not, you must add them yourself (doesn't matter where, as long as it's on separate lines under the [Display] section. The numbers are the dimensions of the Fallout window. "iSize W" defines the width of the window in pixels. And "iSize H" defines the height. 
+
+You can set the numbers to your native resolution - then it will be full screen. You can also set it to some other resolution, so you can position the OSK outside the game window (to prevent the OSK overlapping the game window). 
+
+8) Save the file and close it. 
+
+9) Right-click your VAC shortcut and select "Run as administrator". 
+
+10) Load the VAC profile containing the command, you set up in step 1.
+
+11) Right-click the MBEAT.ahk file you downloaded in step 2, and select "Run as administrator". Make sure caps-lock is OFF at this point.
+
+12) Start Fallout 4, click "Play" and position the window to your liking.
+
+13) Start the OSK of your choosing and position it as well. Make sure it does not overlap the bottom of the game window, as some controls are placed here which you will not be able to see if the OSK overlaps.
+
+14) Before starting a new game, select Settings -> Controls.
+
+15) Scroll down to find "Auto-Move" and set it to "Mouse2" (i.e. Right-click).
+
+This will allow you to start and stop moving by right-clicking. 
+
+16) Select back and Start a new game.
+
+*** CONTROLS ***
+
+Creating your character can be done with the mouse alone. After this, you'll be launched into the game. Due to the configuration done in step 15, you are able to start/stop movement using right-click. You won't be able to do much else though, as by now, Fallout has locked the mouse and you are not able to move the mouse outside the game window and onto the OSK.
+
+So to release the mouse, we need to pause the game. This can be done by voicing the "Escape" command you set up in step 1. This will pause the game and bring up a menu. Now you can move the mouse outside the game window, and over to your OSK. 
+
+To send keyboard presses to the menu (like "arrow up / down", "enter" etc), you use the OSK as you normally would. 
+
+To send keypresses into the game itself, you first turn on CAPS LOCK by clicking the caps-lock key on the OSK. With caps-lock on, any key you press will first dismiss the menu and then will send the keypress after roughly one second (see troubleshooting section if it does not). 
+
+Keep in mind that Fallout will then re-lock the camera. You will be unable to access the OSK until you use the "Escape" VAC command again. After approximately 15-20 minutes in-game, you will get the Pip-boy item, which allows you to control inventory, map etc. 
+
+To trigger the pip-boy, you use the "Tab" VAC command. The pip-boy, like the escape menu, unlocks your mouse and you can use the OSK again. Like the escape menu, any key pressed with caps lock OFF will send the keypress to the pip-boy. This is helpful for navigating the pip-boy. Any key pressed with caps lock ON, will dismiss the pip-boy and send the keypress into the game world after about a second.
